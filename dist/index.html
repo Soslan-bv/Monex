@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,7 @@
 </head>
 
 <body>
-
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__top">
                 <div class="header__top-menu">
@@ -24,32 +23,39 @@
                         <img src="images/logo.svg" alt="logo">
                     </a>
                     <div class="header__top-info">
-                        <p class="header__top-info__text header__top-info__text--location">ООО СТРОЙБРИГ ИНН:
-                            7720484439
-                        </p>
-                        <p class="header__top-info__text header__top-info__text--time">Пн-Вс с 9:00 до 20:00</p>
-                        <a href="email:info@a-pallet.ru"
-                            class="header__top-info__text header__info-email">info@a-pallet.ru</a>
-                        <a href="tel:74951557397" class="header__top-info__text header__top-info__phone">+7 495 155
-                            73
-                            97</a>
+                        <div class="header__top-info__menu">
+                            <p class="header__top-info__text header__top-info__text--location">ООО СТРОЙБРИГ ИНН:
+                                7720484439
+                            </p>
+                            <p class="header__top-info__text header__top-info__text--time">Пн-Вс с 9:00 до 20:00</p>
+                            <a href="email:info@a-pallet.ru"
+                                class="header__top-info__text header__info-email">info@a-pallet.ru</a>
+                            <a href="tel:74951557397" class="header__top-info__phone header__top-info__phone--burger">+7
+                                495
+                                155
+                                73
+                                97</a>
+                        </div>
+                    </div>
+                    <div class="burger">
+                        <span></span>
                     </div>
                 </div>
 
-                <div class="header__sticky">
+                <div class="header__fixed" id="fixed">
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="#" class="header__link">О нас</a>
+                                <a href="#about" class="header__link">О нас</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Продукция</a>
+                                <a href="#products" class="header__link">Продукция</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Приемущества</a>
+                                <a href="#benefits" class="header__link">Приемущества</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Контакты</a>
+                                <a href="#footer" class="header__link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -172,7 +178,7 @@
                             <p class="products__box-text">Размер: 1200х1000 мм <br>
                                 Грузоподъемность: 1500-2000 кг
                             </p>
-                            <a href="#" class="products__box-btn">Заказать</a>
+                            <a href="header" class="products__box-btn">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -215,20 +221,20 @@
                 </div>
             </div>
         </div>
-        <div class="benefits">
+        <div class="benefits" id="benefits">
             <h2 class="title benefits__title">
                 Почему с нами выгодно
             </h2>
             <div class="container">
                 <div class="benefits__inner">
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">01</h4>
+                        <img src="images/benefits-icon-1.svg" alt="product-availability" class="benefits__box-img">
                         <p class="benefits__box-subtitle">НАЛИЧИЕ ТОВАРА</p>
                         <p class="benefits__box-text">Подходящие поддоны есть всегда!
                             Мы подберём необходимый паллет.</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">02</h4>
+                        <img src="images/benefits-icon-2.svg" alt="stability" class="benefits__box-img">
                         <p class="benefits__box-subtitle">СТАБИЛЬНОСТЬ</p>
                         <p class="benefits__box-text">Наша надежность подтверждена
                             рекомендациями ведущих
@@ -236,38 +242,38 @@
                         </p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">03</h4>
+                        <img src="images/benefits-icon-3.svg" alt="professionalism" class="benefits__box-img">
                         <p class="benefits__box-subtitle">ПРОФЕССИОНАЛИЗМ</p>
                         <p class="benefits__box-text">Анализируем потребности
                             и усовершенствуем услуги.</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">04</h4>
+                        <img src="images/benefits-icon-4.svg" alt="quality" class="benefits__box-img">
                         <p class="benefits__box-subtitle">КАЧЕСТВО</p>
                         <p class="benefits__box-text">У нас многоэтапный контроль
                             качества продукции</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">05</h4>
+                        <img src="images/benefits-icon-5.svg" alt="economy" class="benefits__box-img">
                         <p class="benefits__box-subtitle">ЭКОНОМИЧНОСТЬ</p>
                         <p class="benefits__box-text">Знаем секреты <br>
                             экономии в области паллетной
                             логистики. Сократите Ваши затраты!</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">06</h4>
+                        <img src="images/benefits-icon-6.svg" alt="fast-delivery" class="benefits__box-img">
                         <p class="benefits__box-subtitle">КРУГЛОСУТОЧНАЯ ДОСТАВКА</p>
                         <p class="benefits__box-text">Быстрая и аккуратная доставка
                             собственным транспортом 24/7.</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">07</h4>
+                        <img src="images/benefits-icon-7.svg" alt="postponement" class="benefits__box-img">
                         <p class="benefits__box-subtitle">ОТСРОЧКА ПЛАТЕЖА</p>
                         <p class="benefits__box-text">Мы готовы пойти на встречу нашим
                             заказчикам.</p>
                     </div>
                     <div class="benefits__box">
-                        <h4 class="benefits__box-numbers">08</h4>
+                        <img src="images/benefits-icon-8.svg" alt="Efficiency" class="benefits__box-img">
                         <p class="benefits__box-subtitle">ОПЕРАТИВНОСТЬ</p>
                         <p class="benefits__box-text">Оперативный подход, и грамотно
                             выстроенная логистика.</p>
@@ -275,7 +281,7 @@
                 </div>
             </div>
         </div>
-        <div class="questions">
+        <div class="questions" id="questions">
             <h2 class="title questions__title">
                 У вас остались вопросы?
             </h2>
@@ -308,7 +314,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__box-logo">
@@ -320,16 +326,16 @@
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">О нас</a>
+                            <a href="#about" class="footer__link">О нас</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Продукция</a>
+                            <a href="#products" class="footer__link">Продукция</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Приемущества</a>
+                            <a href="#benefits" class="footer__link">Приемущества</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Контакты</a>
+                            <a href="#footer" class="footer__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -348,8 +354,7 @@
                     <div class="header__recall footer__recall">
                         <a href="#" class="header__recall-link footer__recall-link">Обратный звонок</a>
                     </div>
-                    <a href="tel:74951557397"
-                        class="header__top-info__text header__top-info__phone footer__calls-phone">+7 495 155 73
+                    <a href="tel:74951557397" class="header__top-info__phone footer__calls-phone">+7 495 155 73
                         97</a>
                 </div>
             </div>
