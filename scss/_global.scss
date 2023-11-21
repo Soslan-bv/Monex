@@ -1,0 +1,32 @@
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: $ro;
+    font-size: 16px;
+    line-height: 19px;
+    color: $default;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.title {
+    font-family: $od;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 55px;
+    color: $default;
+    display: inline-block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
